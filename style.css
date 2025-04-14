@@ -262,6 +262,9 @@ a {
 
 .hero-image-container {
   position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .hero-image {
@@ -273,6 +276,7 @@ a {
   background-size: cover;
   border-radius: var(--border-radius);
   overflow: hidden;
+  box-shadow: var(--shadow-md);
 }
 
 /* Buttons */
@@ -724,7 +728,12 @@ footer {
   }
 
   .hero-image-container {
-    display: none;
+    max-width: 400px;
+    margin-top: 2rem;
+  }
+
+  .hero-image {
+    height: 350px;
   }
 
   .timeline::before {
@@ -898,6 +907,14 @@ footer {
   .nav-links a {
     font-size: 1rem;
     padding: 0.7rem 0;
+  }
+
+  .hero-image-container {
+    max-width: 300px;
+  }
+
+  .hero-image {
+    height: 300px;
   }
 }
 

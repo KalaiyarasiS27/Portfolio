@@ -11,8 +11,11 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="logo">KS</div>
-            <ul class="nav-links">
+            <div class="logo">Kalaiyarasi</div>
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -22,6 +25,7 @@
             </ul>
         </div>
     </nav>
+    <div class="overlay"></div>
 
     <section id="home" class="hero">
         <div class="container">
@@ -37,13 +41,16 @@
                     <div class="social-icons">
                         <a href="https://www.linkedin.com/in/kalaiyarasi-s-2b7417292" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="mailto:kalaisankar379@gmail.com"><i class="fas fa-envelope"></i></a>
-                        <a href="tel:8838122147"><i class="fas fa-phone"></i></a>
+                        <a href="https://www.instagram.com/kalaiiiii.?igsh=MTJodHZ4NGVpY3g0Zw=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/KalaiyarasiS27"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="hero-image-container">
                     <div class="hero-image">
-                        <img src="kalai.jpg" alt="Kalaiyarasi S" />
-                        
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                        <div class="shape shape-4"></div>
                     </div>
                 </div>
             </div>
@@ -97,7 +104,6 @@
                         <span>JavaScript</span>
                         <span>Python</span>
                         <span>C</span>
-                        <span>Java</span>
                     </div>
                 </div>
                 <div class="skill-category">
@@ -105,7 +111,8 @@
                     <div class="skill-tags">
                         <span>Web Development</span>
                         <span>Problem Solving</span>
-                        <span>Basic DSA</span>
+                        <span>Data Analytics</span>
+                        <span>UI/UX Design</span>
                     </div>
                 </div>
             </div>
@@ -124,7 +131,7 @@
                     <p>Designed and developed a visually appealing and interactive coffee-themed web application.</p>
                     <div class="project-links">
                         <a href="#" class="btn small">View Project</a>
-                        <a href="https://github.com/KalaiyarasiS27/Coffee-Landing-Page" class="btn small">Source Code</a>
+                        <a href="#" class="btn small">Source Code</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -135,7 +142,18 @@
                     <p>Built a functional to-do list web application with task management features using HTML, CSS, and JavaScript.</p>
                     <div class="project-links">
                         <a href="#" class="btn small">View Project</a>
-                        <a href="https://github.com/KalaiyarasiS27/ToDo" class="btn small">Source Code</a>
+                        <a href="#" class="btn small">Source Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce Website</h3>
+                    <p>Developed a responsive e-commerce website with product listing, cart functionality, and user-friendly navigation.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn small">View Project</a>
+                        <a href="#" class="btn small">Source Code</a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -144,17 +162,6 @@
                     </div>
                     <h3>BookSky: Digital Book Management</h3>
                     <p>Enabled users to add book details, including title, author name, and description, with search and edit functionalities.</p>
-                    <div class="project-links">
-                        <a href="#" class="btn small">View Project</a>
-                        <a href="https://github.com/KalaiyarasiS27/BookSky" class="btn small">Source Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <i class="fas fa-microphone-alt"></i>
-                    </div>
-                    <h3>Gen AI Meeting Minutes Generator</h3>
-                    <p>Automatically generate well-structured and professional meeting minutes from voice recordings or raw notes, enabling teams to save time, enhance documentation accuracy, and improve accountability in meetings.</p>
                     <div class="project-links">
                         <a href="#" class="btn small">View Project</a>
                         <a href="#" class="btn small">Source Code</a>
@@ -248,5 +255,23 @@
             <p>&copy; 2024 Kalaiyarasi S. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('show');
+        });
+        
+        // Close menu when clicking a link
+        const links = document.querySelectorAll('.nav-links a');
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('show');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalaiyarasi Sankar - Portfolio</title>
+    <link rel="stylesheet" href="Kport.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Kalaiyarasi Sankar</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#course-completion">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Kalaiyarasi Sankar</span></h1>
+                <p class="hero-subtitle">Software Developer & AI/ML Enthusiast</p>
+                <p class="hero-description">Passionate about creating innovative solutions and continuously learning new technologies</p>
+                <div class="hero-buttons">
+                    <a href="#certifications" class="btn btn-primary">View Certifications</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="Kalai.jpg" alt="Kalaiyarasi Sankar" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="image-placeholder" style="display: none;">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a dedicated software developer with a strong passion for technology and continuous learning. With a background in Computer Science from K.S.R College of Engineering, I have completed multiple virtual internships and course completions in various technologies.</p>
+                    <p>My expertise spans across web developmen. I am committed to building innovative solutions and staying updated with the latest industry trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3>HTML</h3>
+                            <p>Web markup</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3>CSS</h3>
+                            <p>Styling & design</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3>JavaScript</h3>
+                            <p>Interactive development</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3>React</h3>
+                            <p>UI framework</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h3>Java</h3>
+                            <p>Backend development</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>MySQL</h3>
+                            <p>Database management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">My recent work and projects</p>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-header" style="padding: 1.5rem; display: flex; justify-content: center; align-items: center;">
+                        <div style="font-size: 3rem; color: var(--white);">
+                            <i class="fas fa-file-audio"></i>
+                        </div>
+                    </div>
+                    <div class="cert-body">
+                        <h3>Audio to Notes Generator</h3>
+                        <p class="cert-desc">A web application that transcribes meeting audio using OpenAI Whisper, summarizes meetings using OpenAI GPT, and stores results in MongoDB for easy access and management.</p>
+                        <div class="cert-footer">
+                            <a href="https://github.com/KalaiyarasiS27/NotesGen" target="_blank" rel="noopener noreferrer" class="cert-tag" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section (EduSkills) -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <p class="section-subtitle">Professional certifications and virtual internships</p>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="edu1.jpg" alt="GEN-AI Virtual Internship Certificate" class="cert-img">
+                    </div>
+                    <div class="cert-header">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-grade grade-outstanding">Grade: O</div>
+                    </div>
+                    <div class="cert-body">
+                        <h3>GEN-AI Virtual Internship</h3>
+                        <p class="cert-org">AICTE - EduSkills</p>
+                        <div class="cert-details">
+                            <p><i class="far fa-calendar"></i> October - December 2025</p>
+                            <p><i class="fas fa-clock"></i> 10 weeks</p>
+                            <p><i class="fas fa-award"></i> Outstanding (90-100%)</p>
+                        </div>
+                        <p class="cert-desc">Completed comprehensive Gen-AI Virtual Internship with curriculum provided by AWS Academy. Achieved Outstanding grade.</p>
+                        <div class="cert-footer">
+                            <span class="cert-tag">AWS Academy</span>
+                            <span class="cert-tag">Ministry of Education</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="edu2.jpg" alt="AI-ML Virtual Internship Certificate" class="cert-img">
+                    </div>
+                    <div class="cert-header">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-grade grade-pass">Grade: P</div>
+                    </div>
+                    <div class="cert-body">
+                        <h3>AI-ML Virtual Internship</h3>
+                        <p class="cert-org">AICTE - EduSkills</p>
+                        <div class="cert-details">
+                            <p><i class="far fa-calendar"></i> April - June 2024</p>
+                            <p><i class="fas fa-clock"></i> 10 weeks</p>
+                            <p><i class="fas fa-award"></i> Pass</p>
+                        </div>
+                        <p class="cert-desc">Successfully completed 10-week AI-ML Virtual Internship supported by India Edu Program and Google for Developers.</p>
+                        <div class="cert-footer">
+                            <span class="cert-tag">Google for Developers</span>
+                            <span class="cert-tag">NEAT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="edu3.jpg" alt="Android Developer Virtual Internship Certificate" class="cert-img">
+                    </div>
+                    <div class="cert-header">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-grade grade-pass">Grade: P</div>
+                    </div>
+                    <div class="cert-body">
+                        <h3>Android Developer Virtual Internship</h3>
+                        <p class="cert-org">AICTE - EduSkills</p>
+                        <div class="cert-details">
+                            <p><i class="far fa-calendar"></i> July - September 2024</p>
+                            <p><i class="fas fa-clock"></i> 10 weeks</p>
+                            <p><i class="fas fa-award"></i> Pass</p>
+                        </div>
+                        <p class="cert-desc">Completed 10-week Android Developer Virtual Internship with curriculum and support from Google for Developers.</p>
+                        <div class="cert-footer">
+                            <span class="cert-tag">Google for Developers</span>
+                            <span class="cert-tag">India Edu Program</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Completion Section (Infosys) -->
+    <section id="course-completion" class="course-completion">
+        <div class="container">
+            <h2 class="section-title">Course Completions</h2>
+            <p class="section-subtitle">Completed courses and training programs</p>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="html.jpg" alt="HTML5 Course Completion Certificate" class="course-img">
+                    </div>
+                    <div class="course-content">
+                        <h3>HTML5 - The Language</h3>
+                        <p class="course-org">Infosys & Springboard</p>
+                        <div class="course-details">
+                            <p><i class="far fa-calendar-check"></i> Completed: November 29, 2025</p>
+                        </div>
+                        <div class="course-badge">
+                            <span class="badge">Course Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="css.jpg" alt="CSS3 Course Completion Certificate" class="course-img">
+                    </div>
+                    <div class="course-content">
+                        <h3>CSS3</h3>
+                        <p class="course-org">Infosys & Springboard</p>
+                        <div class="course-details">
+                            <p><i class="far fa-calendar-check"></i> Completed: November 29, 2025</p>
+                        </div>
+                        <div class="course-badge">
+                            <span class="badge">Course Completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="js.jpg" alt="JavaScript Course Completion Certificate" class="course-img">
+                    </div>
+                    <div class="course-content">
+                        <h3>JavaScript</h3>
+                        <p class="course-org">Infosys & Springboard</p>
+                        <div class="course-details">
+                            <p><i class="far fa-calendar-check"></i> Completed: November 29, 2025</p>
+                        </div>
+                        <div class="course-badge">
+                            <span class="badge">Course Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's connect and discuss opportunities</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:kalaisan379@gmail.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>kalaisan379@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kalaiyarasi-s-2b7417292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>Professional network</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/KalaiyarasiS27" target="_blank" rel="noopener noreferrer" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>View My Projects</h4>
+                            <p>Check out my GitHub repositories</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Kalaiyarasi Sankar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
